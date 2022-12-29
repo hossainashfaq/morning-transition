@@ -7,12 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .bat {
-            transition: transform 2s ease;
+        .field {
+            width: 1000px;
+            height: 600px;
+            border: 2px solid black;
         }
 
-        .bat:hover {
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: blue;
+            position: relative;
+            left: 300px;
+        }
+
+        .bat {
+            transition: transform 2s;
+        }
+
+        .field:hover .bat {
             transform: rotate(-60deg);
+            transform-origin: top right;
         }
     </style>
 </head>
@@ -21,6 +37,9 @@
     <div class="field">
         <div>
             <img class="bat" src="/bat.png" alt="">
+        </div>
+        <div class="ball">
+
         </div>
     </div>
 </body>
