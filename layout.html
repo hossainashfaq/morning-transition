@@ -15,11 +15,14 @@
         text-align: center;
     }
 
+    #box {
+        flex-grow: calc(1);
+    }
+
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
         width: 500px;
         height: 200px;
         border: 2px solid blue;
@@ -33,31 +36,8 @@
 
     <div class="container">
         <div class="box">item-1</div>
-        <div class="box">item-2</div>
-        <div class="box">item-3</div>
-        <div class="box">item-4</div>
-        <div class="box">item-3</div>
-        <div class="box">item-4</div>
-        <div class="box">item-3</div>
-        <div class="box">item-4</div>
-        <div class="box">item-3</div>
-        <div class="box">item-4</div>
-        <div class="box">item-3</div>
-        <div class="box">item-4</div>
-        <div class="box">item-3</div>
-        <div class="box">item-4</div>
-        <div class="box">item-3</div>
-        <div class="box">item-4</div>
-        <div class="box">item-3</div>
-        <div class="box">item-4</div>
-        <div class="box">item-3</div>
-        <div class="box">item-4</div>
-        <div class="box">item-3</div>
-        <div class="box">item-4</div>
-        <div class="box">item-3</div>
-        <div class="box">item-4</div>
-        <div class="box">item-3</div>
-        <div class="box">item-40</div>
+        <div id="box" class="box">item-2</div>
+
     </div>
 </body>
 
